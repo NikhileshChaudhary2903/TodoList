@@ -56,7 +56,7 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <div className="container">
-            <Header style={headerStyle} />
+            <Header />
             <Route exact path="/" render={props => (
               <React.Fragment>
                 <AddTodo addTodo={this.addTodo} />
@@ -71,10 +71,4 @@ class App extends React.Component {
   }
 }
 
-const headerStyle = {
-  background: '#333',
-  color: '#fff',
-  textAlign: 'center',
-  padding: '10px'
-}
 export default App;
